@@ -1,0 +1,13 @@
+Usage: WikiFormatter <input_file> <output_file> <num_threads>
+
+<input_file> and <output_file> are rooted in the data folder. You'll have to include info.bliki.wiki:bliki-core:3.1.0
+as an external library before compiling.
+
+Will output the pages of the wikidump as a series of lines. Each line will first contain the last modification date of
+the article as YYYY-MM-DDT(Time in seconds), where T is the actual char 'T'. It will then contain a space delimited list
+of the words within the page.
+
+The 56 GB file produces a ~12 GB output file.
+
+The program will output the following error, but it should still be correct:
+"info.bliki.extensions.scribunto.ScribuntoException: java.io.FileNotFoundException: getRawWikiContent returned null"
